@@ -47,7 +47,7 @@ struct ParentView: View {
                     DetailView(name: animal.name, image: animal.systemImage, color: animal.color)
                 }
                 .toolbar {
-                    ToolbarItem(placement: .bottomBar) {
+                    ToolbarItem(placement: .topBarLeading) {
                         Button("Settings", systemImage: "switch.2") {
                             //
                         }
