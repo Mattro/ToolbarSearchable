@@ -52,10 +52,8 @@ struct ParentView: View {
                             //
                         }
                     }
-                    ToolbarSpacer(.flexible, placement: .bottomBar)
-                    DefaultToolbarItem(kind: .search, placement: .bottomBar)
                 }
-                .searchable(text: $searchPlaceText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search Animals", suggestions: {
+                .searchable(text: $searchPlaceText, prompt: "Search Animals", suggestions: {
 
                     if searchPlaceText.isEmpty {
 
